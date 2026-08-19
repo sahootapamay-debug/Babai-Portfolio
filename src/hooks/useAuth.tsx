@@ -59,7 +59,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const resetPassword = async (email: string) => {
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: 'https://www.akash1.online/reset-password',
+      redirectTo: 'https://babai-portfolio-azure.vercel.app/reset-password',
     });
 
     return { error: error?.message ?? null };
