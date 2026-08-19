@@ -152,6 +152,14 @@ INSERT INTO storage.buckets (id, name, public)
 SELECT 'site-assets', 'site-assets', true
 WHERE NOT EXISTS (SELECT 1 FROM storage.buckets WHERE id = 'site-assets');
 
+INSERT INTO storage.buckets (id, name, public)
+SELECT 'open-graph', 'open-graph', true
+WHERE NOT EXISTS (SELECT 1 FROM storage.buckets WHERE id = 'open-graph');
+
+INSERT INTO storage.buckets (id, name, public)
+SELECT 'favicon', 'favicon', true
+WHERE NOT EXISTS (SELECT 1 FROM storage.buckets WHERE id = 'favicon');
+
 -- Public read policies for storage
 DROP POLICY IF EXISTS "public_read_profile_bucket" ON storage.objects;
 CREATE POLICY "public_read_profile_bucket" ON storage.objects FOR SELECT TO anon, authenticated USING (bucket_id = 'profile');
