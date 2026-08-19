@@ -64,7 +64,7 @@ export function AdminLayout({ current, onNavigate, unreadCount, realtimeStatus, 
           {/* Logo */}
           <div className="flex items-center justify-between border-b border-white/5 px-5 py-5">
             <div>
-              <h1 className="text-sm font-bold tracking-wide text-white">AKASH MONDAL</h1>
+              <h1 className="text-sm font-bold tracking-wide text-white">TAPAMAY SAHOO</h1>
               <p className="text-[10px] uppercase tracking-widest text-slate-500">Portfolio Admin</p>
             </div>
             <button onClick={() => setMobileOpen(false)} className="lg:hidden text-slate-400 hover:text-white" aria-label="Close menu">
