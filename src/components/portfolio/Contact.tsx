@@ -11,7 +11,7 @@ interface ContactProps {
 
 type FormState = 'idle' | 'sending' | 'sent' | 'failed';
 
-const WHATSAPP_DEFAULT_MSG = 'Hello Akash, I found your portfolio and would like to discuss...';
+const WHATSAPP_DEFAULT_MSG = 'Hello Tapamay, I found your portfolio and would like to discuss...';
 
 export function Contact({ contactSettings, socialLinks }: ContactProps) {
   const { toast } = useToast();
